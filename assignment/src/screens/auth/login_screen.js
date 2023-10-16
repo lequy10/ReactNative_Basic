@@ -34,7 +34,7 @@ const LoginScreen =({navigation})=> {
 
       if (user) {
         // Đăng nhập thành công, chuyển đến màn hình UserListScreen
-        navigation.replace("home");
+        navigation.navigate("home");
       } else {
         Alert.alert("Login Failed", "Invalid email or password");
       }
